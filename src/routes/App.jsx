@@ -15,7 +15,7 @@ const App = () => {
                     <Route exact path={'/'} component={ Home } />
                     <Route exact path={'/login'} component={ Login } />
                     <Route exact path={'/password-recovery'} component={ PasswordRecovery } />
-                    <Route component={ NotFound } />
+                    <Route path="*" component={ NotFound } />
                 </Switch>
             </Layout>
         </BrowserRouter>

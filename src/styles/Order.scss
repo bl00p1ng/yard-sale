@@ -1,0 +1,23 @@
+.Order {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24px 0;
+}
+
+.Order p {
+    font-weight: 700;
+}
+
+.Order p:first-child span {
+    display: block;
+}
+
+.Order p span:nth-child(2) {
+    color: var(--very-light-pink);
+    font-weight: 500;
+}
+
+.Order .price img {
+    margin-left: 16px;
+}

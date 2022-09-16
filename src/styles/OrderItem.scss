@@ -1,0 +1,12 @@
+.OrderItem figure img {
+    width: 120px;
+    border-radius: 16px;
+}
+
+.OrderItem .product-name {
+    color: var(--very-light-pink);
+}
+
+.OrderItem .price {
+    font-weight: 700;
+}

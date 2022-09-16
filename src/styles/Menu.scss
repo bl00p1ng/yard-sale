@@ -1,0 +1,39 @@
+.desktop-menu {
+    width: 150px;
+    height: auto;
+    border: 1px solid var(--very-light-pink);
+    border-radius: 6px;
+    padding: 20px 20px 0 20px;
+    position: absolute;
+    right: 65px;
+}
+
+.desktop-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.desktop-menu ul li {
+    text-align: end;
+}
+
+
+.desktop-menu ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.desktop-menu ul li:last-child {
+    padding-top: 24px;
+    border-top: 1px solid var(--very-light-pink);
+}
+
+.desktop-menu ul li:last-child a {
+    color: var(--hospital-green);
+    font-size: var(--sm);
+    font-weight: 500;
+}

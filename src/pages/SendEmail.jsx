@@ -1,12 +1,12 @@
 import React from 'react'
-import '../styles/PasswordRecovery.scss'
+import '../styles/SendEmail.scss'
 import logotype from '../../public/assets/logotypes/logo_yard_sale.svg'
 import emailIcon from '../../public/assets/icons/email.svg'
 
 
 const PasswordRecovery = () => {
     return (
-        <div className="login">
+        <div className="SendEmail">
             <div className="container">
                 <img src={logotype} alt="Logo" className="logo" />
 

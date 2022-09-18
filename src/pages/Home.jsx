@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react'
 import Header from '../components/Header'
-import ProductDetail from '../components/ProductDetail'
 import Products from './Products'
 
 const Home = () => {
@@ -8,7 +7,6 @@ const Home = () => {
         <Fragment>
             <Header />
             <Products />
-            <ProductDetail />
         </Fragment>
     )
 }

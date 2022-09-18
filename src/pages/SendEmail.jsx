@@ -1,7 +1,7 @@
 import React from 'react'
-import '../styles/SendEmail.scss'
-import logotype from '../../public/assets/logotypes/logo_yard_sale.svg'
-import emailIcon from '../../public/assets/icons/email.svg'
+import '@styles/SendEmail.scss'
+import logotype from '@logos/logo_yard_sale.svg'
+import emailIcon from '@icons/email.svg'
 
 
 const PasswordRecovery = () => {

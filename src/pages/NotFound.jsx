@@ -1,11 +1,11 @@
-import React from 'react'
-import '../styles/NotFound.scss'
-import ImgError404 from '../../public/assets/img/404_not_found.jpg' 
+import React from 'react';
+import '@styles/NotFound.scss';
+import imgError404 from '@images/404_not_found.jpg' ;
 
 const NotFound = () => {
     return (
         <main className='error-404'>
-            <img src={ ImgError404 } alt="Error 404" />
+            <img src={ imgError404 } alt="Error 404" />
 
             <h1>
                 Error 404

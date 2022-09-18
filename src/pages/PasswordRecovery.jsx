@@ -1,12 +1,13 @@
 import React from 'react';
-import '../styles/PasswordRecovery.scss';
+import '@styles/PasswordRecovery.scss';
+import logo from '@logos/logo_yard_sale.svg';
 
 const PasswordRecovery = () => {
     return (
         <div className="PasswordRecovery">
             <div className="PasswordRecovery-container">
                 <img 
-                    src="./logos/logo_yard_sale.svg" 
+                    src={ logo }
                     alt="logo" 
                     className="logo"
                 />

@@ -1,5 +1,6 @@
 import React from 'react'
-import '../styles/OrderItem.scss'
+import '@styles/OrderItem.scss'
+import closeIcon from '@icons/icon_close.png';
 
 const OrderItem = () => {
     return (
@@ -15,7 +16,7 @@ const OrderItem = () => {
 
             <p className="price">$ 120.00</p>
 
-            <img src="../assets/icons/icon_close.png" alt="Close icon"></img>
+            <img src={ closeIcon} alt="Close icon"></img>
         </div>
     )
 }

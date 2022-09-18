@@ -1,5 +1,6 @@
-import React from 'react'
-import '../styles/Order.scss'
+import React from 'react';
+import '@styles/Order.scss';
+import arrowIcon from '@icons/flechita.svg';
 
 const Order = () => {
     return (
@@ -13,14 +14,14 @@ const Order = () => {
                 <p className="price">
                     <span>$ 120.00</span>
                     <img 
-                        src="../assets/icons/flechita.svg" 
+                        src={ arrowIcon } 
                         alt="arrow icon" 
                     />
                 </p>
             </div>
 
         </div>
-    )
+    );
 }
 
 export default Order

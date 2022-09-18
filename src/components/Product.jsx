@@ -1,6 +1,6 @@
 import React from 'react'
-import '../styles/Product.scss'
-import addToCartIcon from '../../public/assets/icons/bt_add_to_cart.svg';
+import '@styles/Product.scss'
+import addToCartIcon from '@icons/bt_add_to_cart.svg';
 
 const Product = () => {
     return (
@@ -25,7 +25,7 @@ const Product = () => {
                 </figure>
             </div>
         </div>
-    )
+    );
 }
 
 export default Product

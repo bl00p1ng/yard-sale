@@ -8,7 +8,7 @@ const Login = () => {
             <div className="Login-container">
                 <img 
                     src= { logo }
-                    alt="logo" className="logo" 
+                    alt="logo" className="Login-logo" 
                 />
                 <form action="/" className="form">
                     <label 

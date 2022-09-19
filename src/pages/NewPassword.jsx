@@ -9,7 +9,7 @@ const NewPassword = () => {
                 <img 
                     src={ logo } 
                     alt="logo" 
-                    className="logo"
+                    className="NewPassword-logo"
                 />
                 <h1 className="title">
                     Create a new password

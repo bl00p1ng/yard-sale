@@ -9,7 +9,7 @@ const PasswordRecovery = () => {
                 <img 
                     src={ logo }
                     alt="logo" 
-                    className="logo"
+                    className="PasswordRecovery-logo"
                 />
                 <h1 className="title">
                     Password recovery

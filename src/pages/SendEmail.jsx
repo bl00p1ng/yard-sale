@@ -8,7 +8,7 @@ const PasswordRecovery = () => {
     return (
         <div className="SendEmail">
             <div className="container">
-                <img src={logotype} alt="Logo" className="logo" />
+                <img src={logotype} alt="Logo" className="SendEmail-logo" />
 
                 <h1 className="title">Email has been sent!</h1>
                 <p className="subtitle">

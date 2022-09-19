@@ -57,6 +57,11 @@
     margin-right: 24px;
 }
 
+.navbar-right .email:hover {
+    color: var(--hospital-green);
+    cursor: pointer;
+}
+
 .navbar-shopping-cart {
     position: relative;
 }

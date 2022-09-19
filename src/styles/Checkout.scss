@@ -27,7 +27,7 @@
 	background-color: var(--text-input-field);
 	margin-bottom: 24px;
 	border-radius: 8px;
-	padding: 0 24px;
+	padding: var(--md);
 }
 .order p:nth-child(1) {
 	display: flex;

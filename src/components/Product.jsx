@@ -2,7 +2,10 @@ import React, { useState } from 'react'
 import '@styles/Product.scss'
 import addToCartIcon from '@icons/bt_add_to_cart.svg';
 
-const Product = () => {
+const Product = ({ product }) => {
+    // Obtener las propiedades del producto
+    const { title, images, price } = product;
+
     const [cart, setCart] = useState([]);
 
     const handleClick = () => {
@@ -12,15 +15,15 @@ const Product = () => {
     return (
         <div className='Product'>
             <img 
-                src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
-                alt="Product image" 
-                class="product-img"
+                src={ images[0] }
+                alt={ title } 
+                className="product-img"
             />
 
-            <div class="product-info">
+            <div className="product-info">
                 <div>
-                    <p>$120,00</p>
-                    <p>Bike</p>
+                    <p>${ price }</p>
+                    <p>{ title }</p>
                 </div>
 
                 <figure onClick={ handleClick }>

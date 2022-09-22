@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import AppContext from '@context/AppContext';
 import '@styles/Header.scss'
 import Menu from '@components/Menu.jsx';
 import menuIcon from '@icons/icon_menu.svg';
@@ -12,6 +13,8 @@ const Header = () => {
         setToggle(!toggle);
     }
 
+    // Obtener el estado con los productos del carrito
+    const { state } = useContext(AppContext);
 
     return (
         <nav className="navbar">
@@ -63,7 +66,8 @@ const Header = () => {
                             alt="Shopping cart icon" 
                         />
 
-                        <div>2</div>
+                        {/* Mostrar la cantidad de productos agregados al carrito */}
+                        {state.cart.length > 0 ? <div>{state.cart.length}</div> : null}
                     </li>
                 </ul>
             </div>

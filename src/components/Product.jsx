@@ -1,15 +1,18 @@
-import React, { useState } from 'react'
+import React, { useContext } from 'react'
 import '@styles/Product.scss'
 import addToCartIcon from '@icons/bt_add_to_cart.svg';
+import AppContext from '@context/AppContext';
 
 const Product = ({ product }) => {
     // Obtener las propiedades del producto
     const { title, images, price } = product;
 
-    const [cart, setCart] = useState([]);
+    // Obtener del contexto la función para agregar productos al carrito
+    const { addToCart } = useContext(AppContext);
 
-    const handleClick = () => {
-        setCart([])
+    // Agregar al carrito el producto seleccionado al hacer click
+    const handleClick = (productItem) => {
+        addToCart(productItem)
     };
 
     return (
@@ -26,7 +29,7 @@ const Product = ({ product }) => {
                     <p>{ title }</p>
                 </div>
 
-                <figure onClick={ handleClick }>
+                <figure onClick={ () => handleClick(product) }>
                     <img 
                         src={ addToCartIcon }
                         alt="Add to cart icon"

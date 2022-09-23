@@ -24,8 +24,12 @@ const MyOrder = () => {
             </div>
             <div className="my-order-content">
                 <div className="section-scroll">
-                    {state.cart.map(product => (
-                        <OrderItem product={ product } key={ `order-item-${product.id}` } />
+                    {state.cart.map((product, index) => (
+                        <OrderItem 
+                            indexValue= { index }
+                            product={ product } 
+                            key={ index } 
+                        />
                     ))}
                 </div>
 

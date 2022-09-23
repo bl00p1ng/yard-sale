@@ -1,9 +1,9 @@
-@import 'vars';
+@use 'vars';
 
 .MyOrder {
 	background-color: var(--white);
 	width: 360px;
-	padding: 24px;
+	padding: var(--sm);
 	box-sizing: border-box;
 	position: absolute;
 	top: 60px;
@@ -15,14 +15,16 @@
 }
 .title-container {
 	display: flex;
+	margin-bottom: var(--lg);
 }
 .title-container img {
 	transform: rotate(180deg);
 	margin-right: 14px;
 }
-.title {
+.MyOrder .title {
 	font-size: var(--lg);
 	font-weight: bold;
+	margin-bottom: 0;
 }
 .section-scroll::-webkit-scrollbar {
 	width: 0.8rem;

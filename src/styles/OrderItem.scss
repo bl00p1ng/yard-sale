@@ -1,3 +1,5 @@
+@use './vars';
+
 .OrderItem {
     display: flex;
     justify-content: space-between;
@@ -7,12 +9,21 @@
 .OrderItem figure img {
     width: 120px;
     border-radius: 16px;
+    margin-bottom: var(--sm);
 }
 
 .OrderItem .product-name {
+    width: auto;
     color: var(--very-light-pink);
+    margin-left: 8px;
 }
 
 .OrderItem .price {
+    width: 50px;
     font-weight: 700;
+}
+
+.OrderItem .close-icon {
+    cursor: pointer;
+    margin: 0 8px;
 }

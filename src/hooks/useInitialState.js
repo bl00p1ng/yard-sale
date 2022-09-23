@@ -9,7 +9,7 @@ const useInitialState = () => {
     const [state, setState] = useState(initialState);
 
     // Agregar productos al carrito
-    const addToCart = (payload) => {
+    const addToCart = payload => {
         // Mantiene los datos previos del state y adiciona el producto nuevo
         setState({
             ...state,
@@ -17,9 +17,18 @@ const useInitialState = () => {
         });
     };
 
+    // Remover productos del carrito
+    const removeFromCart = indexToRemove => {
+        setState({
+            ...state,
+            cart: state.cart.filter((product, index) => index !== indexToRemove)
+        });
+    };
+
     return {
         state,
-        addToCart
+        addToCart,
+        removeFromCart
     }
 };
 

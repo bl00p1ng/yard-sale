@@ -5,10 +5,16 @@ import Menu from '@components/Menu.jsx';
 import menuIcon from '@icons/icon_menu.svg';
 import logotype from '@logos/logo_yard_sale.svg';
 import shoppingCartIcon from '@icons/icon_shopping_cart.svg'
+import MyOrders from '@containers/MyOrders'
 
 const Header = () => {
+    // State para mostrar/ocultar el menu
     const [toggle, setToggle] = useState(false);
 
+    // State para mostrar/ocultar el checkout del carrito
+    const [toggleMyOrders, setToggleMyOrders] = useState(false);
+
+    // Cambiar el state para mostrar el menu
     const handleToggle = () => {
         setToggle(!toggle);
     }
@@ -56,11 +62,18 @@ const Header = () => {
 
             <div className="navbar-right">
                 <ul>
-                    <li className="email" onClick={ handleToggle }>
+                    <li 
+                        className="email" 
+                        onClick={ handleToggle }
+                    >
                         johndoe@gmail.com
                     </li>
 
-                    <li className="navbar-shopping-cart">
+                    <li 
+                        className="navbar-shopping-cart" 
+                        // Mostrar el carrito
+                        onClick={ () => setToggleMyOrders(!toggleMyOrders) }
+                    >
                         <img 
                             src={ shoppingCartIcon } 
                             alt="Shopping cart icon" 
@@ -72,7 +85,11 @@ const Header = () => {
                 </ul>
             </div>
 
+            {/* Mostar/ocultar el menu */}
             { toggle && <Menu /> }
+
+            {/* Mostar/ocultar el menu */}
+            { toggleMyOrders && <MyOrders /> }
         </nav>
     )
 }

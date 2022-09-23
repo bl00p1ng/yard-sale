@@ -1,11 +1,17 @@
 @import 'vars';
 
 .MyOrder {
+	background-color: var(--white);
 	width: 360px;
 	padding: 24px;
 	box-sizing: border-box;
 	position: absolute;
+	top: 60px;
 	right: 0;
+	bottom: 0;
+	// overflow-y: auto;
+	border-radius: 6px;
+	border: 1px solid var(--very-light-pink);
 }
 .title-container {
 	display: flex;
@@ -18,13 +24,29 @@
 	font-size: var(--lg);
 	font-weight: bold;
 }
+.section-scroll::-webkit-scrollbar {
+	width: 0.8rem;
+}
+.section-scroll::-webkit-scrollbar-track {
+	background: var( --very-light-pink );
+	border-radius: 1rem;
+}
+.section-scroll::-webkit-scrollbar-thumb {
+	background-color: var( --hospital-green );
+	border-radius: 20px;
+}
+.section-scroll {
+	height: 300px;
+	overflow-y: scroll !important;
+	overflow-x:hidden !important;
+}
 .order {
 	display: grid;
 	grid-template-columns: auto 1fr;
 	gap: 16px;
 	align-items: center;
 	background-color: var(--text-input-field);
-	margin-bottom: 24px;
+	margin: 24px 0;
 	border-radius: 8px;
 	padding: 0 24px;
 }
